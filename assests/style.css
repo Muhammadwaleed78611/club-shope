@@ -142,7 +142,7 @@ ul li{
 }
 
 .section4-btn {
-    padding: 17px 20px;
+    padding: 10px 14px;
     margin-left: 85px;
     background-color: black;
     border: none;
@@ -256,6 +256,9 @@ ul li{
 }
 .footre-icon:hover i{
     color: white;
+}
+.footer-colaps{
+    margin-right: 60px;
 }
 
 @media(max-width:768px) {
