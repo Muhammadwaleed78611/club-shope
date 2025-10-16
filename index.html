@@ -23,24 +23,26 @@
 
     <nav class="navbar navbar-expand-lg pt-4 pb-4 w-100 ">
       <div class="container-fluid">
-        <a class="navbar-brand " href="#"><img src="/assests/logo" alt=""></a>
+        <div>
+          <a class="navbar-brand " href="#"><img src="assests/images/logo.webp" alt=""></a>
+        </div>
         <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
           aria-controls="offcanvasScrolling">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-start show text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-          id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas offcanvas-center show text-bg-dark d-flex" data-bs-scroll="true" data-bs-backdrop="false"
+          tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 offset-3 ">
+          <div class="offcanvas-body ">
+            <ul class="navbar-nav  gap-1 mx-auto mt-2 ">
               <li class="nav-item">
-                <a class="nav-link active text-light fs-5 fw-semibold" aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-light fs-6 fw-semibold" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light fs-5 fw-semibold" href="#" role="button"
+                <a class="nav-link dropdown-toggle text-light fs-6 fw-semibold" href="#" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false">shop </a>
                 <ul class="dropdown-menu ">
                   <li><a class="dropdown-item" href="#">Action</a></li>
@@ -49,7 +51,7 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light fs-5 fw-semibold" href="#" role="button"
+                <a class="nav-link dropdown-toggle text-light fs-6 fw-semibold" href="#" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false">Blog </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item fs-6 fw-semibold" href="#">Blog List</a></li>
@@ -57,7 +59,7 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light fs-5 fw-semibold" href="#" role="button"
+                <a class="nav-link dropdown-toggle text-light fs-6 fw-semibold" href="#" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false">Page </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item fs-6 fw-semibold" href="#">About Us</a></li>
@@ -71,30 +73,96 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-light fs-5 fw-semibold" aria-current="page" href="#">Contact Us</a>
+                <a class="nav-link active text-light fs-6 fw-semibold" aria-current="page" href="#">Contact Us</a>
               </li>
 
             </ul>
-            <div class="login d-flex gap-4" data-bs-toggle="modal" data-bs-target="#"><a href="#">
-                <div class=" login d-flex gap-2">
-              </a>
-              <a href="#">
-                <p class="text-light mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i
-                    class="fa-solid fa-user text-light fs-4 me-3"></i> Login</p>
-              </a>
-            </div>
-            <i class="fa-solid fa-magnifying-glass text-light fs-4"></i>
-            <i class="fa-solid fa-heart text-light fs-2"></i>
-            <div class="cart d-flex justify-content-center mt-1">
-              <p class="text-light">$0.00</p>
-              <a href="#"> <i class="fa-solid fa-cart-shopping text-light fs-3"></i></a>
+
+
+            <div class=" d-flex align-items-center justify-content-center gap-3  ">
+
+              <div> <a href="#">
+                  <p class="text-light mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <i class="fa-solid fa-user text-light fs-4 me-3"></i> Login</p>
+                </a>
+              </div>
+              <div class="mt-1 align-items-center d-flex justify-content-center gap-4 ">
+                <div><i class="fa-solid fa-magnifying-glass text-light fs-5" data-bs-toggle="modal" data-bs-target="#search"  ></i>  </div>
+                <div><i class="fa-solid fa-heart text-light fs-5 position-relative" data-bs-toggle="offcanvas" data-bs-target="#heart" > 
+                                     <span class="position-absolute bages top-0 start-100 translate-middle  badge rounded-pill bg-danger">1<span>
+
+                   </i>  </div>
+              </div>
+              <div class=" mt-3  align-items-center"  >
+                <p  data-bs-toggle="offcanvas" data-bs-target="#shoping"> <a href="#" class="text-light" style="margin-right: 30px;" > $0.00 <i class="fa-solid fa-cart-shopping text-light fs-5  position-relative"> 
+                   <span class="position-absolute bages top-0 start-100 translate-middle  badge rounded-pill bg-danger">0<span>
+                </i></a></p>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
 
+
+
     </nav>
+
+    <!-- malik -->
+
+
+    <!-- Modal -->
+    <div class="modal fade modal-xl" id="search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body h-100">
+            <h5 class="text-center mt-5 fw-bold">WHAT ARE YOU LOOKING FOR?</h5>
+
+            <div class="input-group mt-5">
+              <input type="text" class="form-control" placeholder="Search for product...">
+
+            </div>
+            <p class="fw-bold text-center mt-3">Popular Searches: <a href="#">Vegetable</a> ,<a href="#"> Meat</a> ,<a
+                href="#">Drink, Juice</a></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- malik -->
+
+    <!-- malik2 -->
+
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="heart"
+      aria-labelledby="offcanvasScrollingLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="heart">My Wishlist</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p class="mt-5 text-center">empty</p>
+      </div>
+    </div>
+    <!-- modal2 -->
+
+    <!-- modal3 -->
+
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="shoping" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="shoping">Backdrop with scrolling</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body shoping-img">
+     <img src="/assests/box1.jpg" alt="">
+     <p class="text-center mt-3 fw-semibold" >Your Cart is Empty</p>
+     <button type="button" class="btn btn-danger ">Return To Shop</button>
+  </div>
+</div>
+    <!-- modal3-->
+
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -230,7 +298,7 @@
       <div class="row g-3 ">
         <div class="col-lg-2 col-md-4 col-sm-6">
           <div class="card">
-            <div class="card-img"><img src="/assests/category01.webp" class="card-img-top" alt="..."></div>
+            <div class="card-img"><img src="/assests/images/category01.webp" class="card-img-top" alt="..."></div>
             <div class="card-body">
               <h4 class="card-title text-center mt-3"><a href="#" class="text-dark fw-bold ">Shorts Shose</a></h4>
               <p class="fs-4 fw-semibold text-danger text-center">8 items</p>
@@ -240,7 +308,7 @@
 
         <div class="col-lg-2 col-md-4 col-sm-6">
           <div class="card">
-            <div class="card-img"><img src="/assests/category02.webp" class="card-img-top" alt="..."></div>
+            <div class="card-img"><img src="/assests/images/category02.webp" class="card-img-top" alt="..."></div>
             <div class="card-body">
               <h4 class="card-title text-center mt-3"><a href="#" class="text-dark fw-bold ">T-Shorts</a></h4>
               <p class="fs-4 fw-semibold text-danger text-center">1 items</p>
@@ -249,7 +317,7 @@
         </div>
         <div class="col-lg-2 col-md-4 col-sm-6">
           <div class="card">
-            <div class="card-img"><img src="/assests/category03.webp" class="card-img-top" alt="..."></div>
+            <div class="card-img"><img src="/assests/images/category03.webp" class="card-img-top" alt="..."></div>
             <div class="card-body">
               <h4 class="card-title text-center mt-3"><a href="#" class="text-dark fw-bold ">Shorts</a></h4>
               <p class="fs-4 fw-semibold text-danger text-center">4 items</p>
@@ -258,7 +326,7 @@
         </div>
         <div class="col-lg-2 col-md-4 col-sm-6">
           <div class="card">
-            <div class="card-img"><img src="/assests/category04.webp" class="card-img-top" alt="..."></div>
+            <div class="card-img"><img src="/assests/images/category04.webp" class="card-img-top" alt="..."></div>
             <div class="card-body">
               <h4 class="card-title text-center mt-3"><a href="#" class="text-dark fw-bold ">LEG WEARUNG</a></h4>
               <p class="fs-4 fw-semibold text-danger text-center">8 items</p>
@@ -267,7 +335,7 @@
         </div>
         <div class="col-lg-2 col-md-4 col-sm-6">
           <div class="card">
-            <div class="card-img"><img src="/assests/category05.webp" class="card-img-top" alt="..."></div>
+            <div class="card-img"><img src="/assests/images/category05.webp" class="card-img-top" alt="..."></div>
             <div class="card-body">
               <h4 class="card-title text-center mt-3"><a href="#" class="text-dark fw-bold ">Shorts Shose</a></h4>
               <p class="fs-4 fw-semibold text-danger text-center">8 items</p>
@@ -276,7 +344,7 @@
         </div>
         <div class="col-lg-2 col-md-4 col-sm-6">
           <div class="card">
-            <div class="card-img"><img src="/assests/category06.webp" class="card-img-top" alt="..."></div>
+            <div class="card-img"><img src="/assests/images/category06.webp" class="card-img-top" alt="..."></div>
             <div class="card-body">
               <h4 class="card-title text-center mt-3"><a href="#" class="text-dark fw-bold ">Shorts Shose</a></h4>
               <p class="fs-4 fw-semibold text-danger text-center">8 items</p>
@@ -300,274 +368,120 @@
           </div>
         </div>
       </div>
-    </marquee>
-    <!-- end -->
-    <!-- section3 -->
+      </marquee>
+      <!-- end -->
+      <!-- section3 -->
 
-    <!-- end -->
+      <!-- end -->
 
-    <!-- section 4 -->
-    <div class="section4 container-fluid">
-      <p class="text-danger fs-5 fw-semibold">Products</p>
-      <div class="d-flex gap-5 sub-5 ">
-        <h2 class="fs-1 fw-bold">Feature Products</h2>
-        <a href="#" class="mt-3  fs-5 fw-semibold section4-a">SELL ALL PRODUCT</a>
-      </div>
-
-      <div class="container-fluid mt-5">
-        <div class="row g-4">
-          <div class="col-lg-3 col-md-6">
-            <div class="card  section4-cart">
-              <div class="section4-img "> <img src="/assests/category02.webp" alt=""></div>
-              <div class="hiden-icons">
-                <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
-                    class="fa-regular fa-heart fs-3"></i></div>
-                <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view"><i
-                    class="fa-regular fa-eye fs-3 "></i></div>
-                <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
-                    class="fa-solid fa-compass fs-3"></i></div>
-              </div>
-              <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-23%</div>
-
-              <div class="card-body">
-
-                <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">RED T-SHORTS</a></h5>
-                <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames
-                  ...</p>
-                <h3 class="fw-bold text-center section4-h3 ">$21 <span>$35.00</span></h3>
-                <a href="#" class="btn btn-primary section4-btn fs-4 fw-semibold text-center  ">ADD TO CART</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card  section4-cart">
-              <div class="section4-img "> <img src="/assests/category01.webp" alt=""></div>
-              <div class="hiden-icons">
-                <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
-                    class="fa-regular fa-heart fs-3"></i></div>
-                <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view"><i
-                    class="fa-regular fa-eye fs-3 "></i></div>
-                <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
-                    class="fa-solid fa-compass fs-3"></i></div>
-              </div>
-              <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-20%</div>
-              <div class="card-body">
-                <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">RED SHOSE</a></h5>
-                <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames
-                  ...</p>
-                <h3 class="fw-bold text-center section4-h3 ">$21 <span>$35.00</span></h3>
-                <a href="#" class="btn btn-primary section4-btn fs-4 fw-semibold text-center  ">ADD TO CART</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card  section4-cart">
-              <div class="section4-img "> <img src="/assests/category04.webp" alt=""></div>
-              <div class="hiden-icons">
-                <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
-                    class="fa-regular fa-heart fs-3"></i></div>
-                <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view"><i
-                    class="fa-regular fa-eye fs-3 "></i></div>
-                <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
-                    class="fa-solid fa-compass fs-3"></i></div>
-              </div>
-              <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-30%</div>
-              <div class="card-body">
-                <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">LEG WEARING</a></h5>
-                <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames
-                  ...</p>
-                <h3 class="fw-bold text-center section4-h3 ">$21 <span>$35.00</span></h3>
-                <a href="#" class="btn btn-primary section4-btn fs-4 fw-semibold text-center  ">ADD TO CART</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card  section4-cart">
-              <div class="section4-img "> <img src="/assests/category03.webp" alt=""></div>
-              <div class="hiden-icons">
-                <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
-                    class="fa-regular fa-heart fs-3"></i></div>
-                <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view"><i
-                    class="fa-regular fa-eye fs-3 "></i></div>
-                <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
-                    class="fa-solid fa-compass fs-3"></i></div>
-              </div>
-              <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-23%</div>
-              <div class="card-body">
-                <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">RED SHORTS</a></h5>
-                <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames
-                  ...</p>
-                <h3 class="fw-bold text-center section4-h3 ">$35 <span>$50.00</span></h3>
-                <a href="#" class="btn btn-primary section4-btn fs-4 fw-semibold text-center">ADD TO CART</a>
-              </div>
-            </div>
-          </div>
+      <!-- section 4 -->
+      <div class="section4 container-fluid">
+        <p class="text-danger fs-5 fw-semibold">Products</p>
+        <div class="d-flex gap-5 sub-5 ">
+          <h2 class="fs-1 fw-bold">Feature Products</h2>
+          <a href="#" class="mt-3  fs-5 fw-semibold section4-a">SELL ALL PRODUCT</a>
         </div>
-      </div>
-    </div>
-    <!-- .section5 -->
 
-
-
-    <div class="container-fluid mt-5">
-      <div class="row g-4">
-        <div class="col-lg-3 col-md-6">
-          <div class="card  section4-cart">
-            <div class="section4-img "> <img src="/assests/ball.webp" alt=""></div>
-            <div class="hiden-icons">
-              <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
-                  class="fa-regular fa-heart fs-3"></i></div>
-              <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view"><i
-                  class="fa-regular fa-eye fs-3 "></i></div>
-              <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
-                  class="fa-solid fa-compass fs-3"></i></div>
-            </div>
-            <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-28%</div>
-            <div class="card-body">
-              <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">BALL</a></h5>
-              <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames ...
-              </p>
-              <h3 class="fw-bold text-center section4-h3 ">$11 <span>$35.00</span></h3>
-              <a href="#" class="btn btn-primary section4-btn fs-5 fw-semibold text-center  ">ADD TO CART</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="card  section4-cart">
-            <div class="section4-img "> <img src="/assests/cap.webp" alt=""></div>
-            <div class="hiden-icons">
-              <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
-                  class="fa-regular fa-heart fs-3"></i></div>
-              <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view"><i
-                  class="fa-regular fa-eye fs-3 "></i></div>
-              <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
-                  class="fa-solid fa-compass fs-3"></i></div>
-            </div>
-            <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-15%</div>
-            <div class="card-body">
-              <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">HEAD CAP</a></h5>
-              <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames ...
-              </p>
-              <h3 class="fw-bold text-center section4-h3 ">$18 <span>$35.00</span></h3>
-              <a href="#" class="btn btn-primary section4-btn fs-4 fw-semibold text-center  ">ADD TO CART</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="card  section4-cart">
-            <div class="section4-img "> <img src="/assests/gloves.webp" alt=""></div>
-            <div class="hiden-icons">
-              <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
-                  class="fa-regular fa-heart fs-3"></i></div>
-              <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view"><i
-                  class="fa-regular fa-eye fs-3 "></i></div>
-              <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
-                  class="fa-solid fa-compass fs-3"></i></div>
-            </div>
-            <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-24%</div>
-            <div class="card-body">
-              <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">GLOVES</a></h5>
-              <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames ...
-              </p>
-              <h3 class="fw-bold text-center section4-h3 ">$25 <span>$35.00</span></h3>
-              <a href="#" class="btn btn-primary section4-btn fs-4 fw-semibold text-center  ">ADD TO CART</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="card  section4-cart">
-            <div class="section4-img "> <img src="/assests/socks.jpg" alt=""></div>
-            <div class="hiden-icons">
-              <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
-                  class="fa-regular fa-heart fs-3"></i></div>
-              <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view"><i
-                  class="fa-regular fa-eye fs-3 "></i></div>
-              <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
-                  class="fa-solid fa-compass fs-3"></i></div>
-            </div>
-            <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-17%</div>
-            <div class="card-body">
-              <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">SOCCERS SOCKES</a></h5>
-              <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames ...
-              </p>
-              <h3 class="fw-bold text-center section4-h3 ">$35 <span>$50.00</span></h3>
-              <a href="#" class="btn btn-primary section4-btn fs-4 fw-semibold text-center">ADD TO CART</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- section6 -->
-
-    <div class="section6 mb-5 ">
-      <div class="container-fluid mt-5">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="card  mb-3">
-              <div class="card-body">
-                <div class="section6-icon text-center"><i class="fa-solid fa-truck fs-2 text-light mt-4 "></i></div>
-                <h3 class="card-title text-center mt-3 fw-bold">100% Secures Payments</h3>
-                <p class="card-text text-center fs-5">Get free delivery on all orders, with sunglasses arriving at your
-                  doorstep at no extra cost!
-
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card  mb-3">
-              <div class="card-body">
-                <div class="section6-icon text-center"><i class="fa-solid fa-headset fs-2 text-light mt-4 "></i></div>
-                <h3 class="card-title text-center mt-3 fw-bold">Customer Support 24/7</h3>
-                <p class="card-text text-center fs-5">Get free delivery on all orders, with sunglasses arriving at your
-                  doorstep at no extra cost!
-
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card  mb-3">
-              <div class="card-body">
-                <div class="section6-icon text-center"><i class="fa-solid fa-sack-dollar fs-2 text-light mt-4"></i>
+        <div class="container-fluid mt-5">
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="card  section4-cart">
+                <div class="section4-img "> <img src="/assests/images/category02.webp" alt=""></div>
+                <div class="hiden-icons">
+                  <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
+                      class="fa-regular fa-heart fs-3"></i></div>
+                  <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view"><i
+                      class="fa-regular fa-eye fs-3 "></i></div>
+                  <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
+                      class="fa-solid fa-compass fs-3"></i></div>
                 </div>
-                <h3 class="card-title text-center mt-3 fw-bold">100% Secures Payments</h3>
-                <p class="card-text text-center fs-5">Get free delivery on all orders, with sunglasses arriving at your
-                  doorstep at no extra cost!
+                <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-23%</div>
 
-                </p>
+                <div class="card-body">
+
+                  <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">RED T-SHORTS</a></h5>
+                  <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames
+                    ...</p>
+                  <h3 class="fw-bold text-center section4-h3 ">$21 <span>$35.00</span></h3>
+                  <a href="#" class="btn btn-primary section4-btn fs-5 mt-4 fw-semibold   ">ADD TO CART</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card  mb-3">
-              <div class="card-body">
-                <div class="section6-icon text-center"><i class="fa-solid fa-coins fs-2 text-light mt-4"></i></div>
-                <h3 class="card-title text-center mt-3 fw-bold">Free Shipping</h3>
-                <p class="card-text text-center fs-5">Get free delivery on all orders, with sunglasses arriving at your
-                  doorstep at no extra cost!
-
-                </p>
+            <div class="col-lg-3 col-md-6">
+              <div class="card  section4-cart">
+                <div class="section4-img "> <img src="/assests/images/category01.webp" alt=""></div>
+                <div class="hiden-icons">
+                  <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
+                      class="fa-regular fa-heart fs-3"></i></div>
+                  <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view"><i
+                      class="fa-regular fa-eye fs-3 "></i></div>
+                  <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
+                      class="fa-solid fa-compass fs-3"></i></div>
+                </div>
+                <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-20%</div>
+                <div class="card-body">
+                  <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">RED SHOSE</a></h5>
+                  <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames
+                    ...</p>
+                  <h3 class="fw-bold text-center section4-h3 ">$21 <span>$35.00</span></h3>
+                  <a href="#" class="btn btn-primary section4-btn  fs-5 mt-4  fw-semibold text-center  ">ADD TO CART</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card  section4-cart">
+                <div class="section4-img "> <img src="/assests/images/category04.webp" alt=""></div>
+                <div class="hiden-icons">
+                  <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
+                      class="fa-regular fa-heart fs-3"></i></div>
+                  <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view"><i
+                      class="fa-regular fa-eye fs-3 "></i></div>
+                  <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
+                      class="fa-solid fa-compass fs-3"></i></div>
+                </div>
+                <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-30%</div>
+                <div class="card-body">
+                  <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">LEG WEARING</a></h5>
+                  <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames
+                    ...</p>
+                  <h3 class="fw-bold text-center section4-h3 ">$21 <span>$35.00</span></h3>
+                  <a href="#" class="btn btn-primary section4-btn fs-5 mt-4 fw-semibold text-center  ">ADD TO CART</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card  section4-cart">
+                <div class="section4-img "> <img src="/assests/images/category03.webp" alt=""></div>
+                <div class="hiden-icons">
+                  <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
+                      class="fa-regular fa-heart fs-3"></i></div>
+                  <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view"><i
+                      class="fa-regular fa-eye fs-3 "></i></div>
+                  <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
+                      class="fa-solid fa-compass fs-3"></i></div>
+                </div>
+                <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-23%</div>
+                <div class="card-body">
+                  <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">RED SHORTS</a></h5>
+                  <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames
+                    ...</p>
+                  <h3 class="fw-bold text-center section4-h3 ">$35 <span>$50.00</span></h3>
+                  <a href="#" class="btn btn-primary section4-btn fs-5 mt-4  fw-semibold text-center">ADD TO CART</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- end  section6-->
-    <!-- section7 -->
-    <div class="section4 container-fluid">
-      <p class="text-danger fs-5 fw-semibold">Products</p>
-      <div class="d-flex gap-5 sub-5 ">
-        <h2 class="fs-1 fw-bold">Latest Products</h2>
-        <a href="#" class="mt-3  fs-5 fw-semibold section4-a">SELL ALL PRODUCT</a>
-      </div>
+      <!-- .section5 -->
+
+
 
       <div class="container-fluid mt-5">
         <div class="row g-4">
           <div class="col-lg-3 col-md-6">
-            <div class="card  section4-cart  position-relative">
-              <div class="section4-img position-relative  "> <img src="/assests/category02.webp" alt=""> </div>
+            <div class="card  section4-cart">
+              <div class="section4-img "> <img src="/assests/images/ball.webp" alt=""></div>
               <div class="hiden-icons">
                 <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
                     class="fa-regular fa-heart fs-3"></i></div>
@@ -576,43 +490,20 @@
                 <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
                     class="fa-solid fa-compass fs-3"></i></div>
               </div>
-              <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-20%</div>
-
+              <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-28%</div>
               <div class="card-body">
-                <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">RED SHORTS</a></h5>
+                <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">BALL</a></h5>
                 <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames
-                  ...</p>
-                <h3 class="fw-bold text-center section4-h3 ">$21 <span>$35.00</span></h3>
-                <a href="#" class="btn btn-primary section4-btn fs-4 fw-semibold text-center  ">ADD TO CART</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="card  section4-cart  position-relative">
-              <div class="section4-img position-relative  "> <img src="/assests/category01.webp" alt=""> </div>
-              <div class="hiden-icons">
-                <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
-                    class="fa-regular fa-heart fs-3"></i></div>
-                <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view"><i
-                    class="fa-regular fa-eye fs-3 "></i></div>
-                <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
-                    class="fa-solid fa-compass fs-3"></i></div>
-              </div>
-              <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-20%</div>
-
-              <div class="card-body">
-                <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">RED SHOSE</a></h5>
-                <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames
-                  ...</p>
-                <h3 class="fw-bold text-center section4-h3 ">$21 <span>$35.00</span></h3>
-                <a href="#" class="btn btn-primary section4-btn fs-5 fw-semibold text-center  ">ADD TO CART</a>
+                  ...
+                </p>
+                <h3 class="fw-bold text-center section4-h3 ">$11 <span>$35.00</span></h3>
+                <a href="#" class="btn btn-primary section4-btn fs-5 fw-semibold text-center mt-4 ">ADD TO CART</a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class="card  section4-cart  position-relative">
-              <div class="section4-img position-relative  "> <img src="/assests/gloves.webp" alt=""> </div>
+            <div class="card  section4-cart">
+              <div class="section4-img "> <img src="/assests/images/cap.webp" alt=""></div>
               <div class="hiden-icons">
                 <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
                     class="fa-regular fa-heart fs-3"></i></div>
@@ -621,20 +512,20 @@
                 <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
                     class="fa-solid fa-compass fs-3"></i></div>
               </div>
-              <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-20%</div>
-
+              <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-15%</div>
               <div class="card-body">
-                <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">Gloves</a></h5>
+                <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">HEAD CAP</a></h5>
                 <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames
-                  ...</p>
-                <h3 class="fw-bold text-center section4-h3 ">$21 <span>$35.00</span></h3>
-                <a href="#" class="btn btn-primary section4-btn fs-4 fw-semibold text-center  ">ADD TO CART</a>
+                  ...
+                </p>
+                <h3 class="fw-bold text-center section4-h3 ">$18 <span>$35.00</span></h3>
+                <a href="#" class="btn btn-primary section4-btn fs-5 fw-semibold text-center  mt-4">ADD TO CART</a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class="card  section4-cart  position-relative">
-              <div class="section4-img position-relative  "> <img src="/assests/category04.webp" alt=""> </div>
+            <div class="card  section4-cart">
+              <div class="section4-img "> <img src="/assests/images/gloves.webp" alt=""></div>
               <div class="hiden-icons">
                 <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
                     class="fa-regular fa-heart fs-3"></i></div>
@@ -643,228 +534,412 @@
                 <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
                     class="fa-solid fa-compass fs-3"></i></div>
               </div>
-              <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-20%</div>
-
+              <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-24%</div>
               <div class="card-body">
-                <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">RED T-SHORTS</a></h5>
+                <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">GLOVES</a></h5>
                 <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames
-                  ...</p>
-                <h3 class="fw-bold text-center section4-h3 ">$21 <span>$35.00</span></h3>
-                <a href="#" class="btn btn-primary section4-btn fs-4 fw-semibold text-center  ">ADD TO CART</a>
+                  ...
+                </p>
+                <h3 class="fw-bold text-center section4-h3 ">$25 <span>$35.00</span></h3>
+                <a href="#" class="btn btn-primary section4-btn fs-5 mt-4 fw-semibold text-center mt-4 ">ADD TO CART</a>
               </div>
             </div>
           </div>
-
-
-
-        </div>
-      </div>
-    </div>
-    <!-- end s7 -->
-
-    <!-- section8 -->
-    <div class="section8 container-fluid mt-5">
-      <p class="text-danger fs-5 fw-semibold">OUR TEAM</p>
-      <h2 class="fs-1 fw-bolder">Meet Our Soccer Store Team</h2>
-      <div class="container-fluid mt-5">
-        <div class="row g-4">
-          <div class=" col-lg-3 col-md-6">
-            <div class="card p-2">
-              <img src="/assests/t-01.webp" class="card-img-top" alt="...">
+          <div class="col-lg-3 col-md-6">
+            <div class="card  section4-cart">
+              <div class="section4-img "> <img src="/assests/images/socks.jpg" alt=""></div>
+              <div class="hiden-icons">
+                <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
+                    class="fa-regular fa-heart fs-3"></i></div>
+                <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view"><i
+                    class="fa-regular fa-eye fs-3 "></i></div>
+                <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
+                    class="fa-solid fa-compass fs-3"></i></div>
+              </div>
+              <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-17%</div>
               <div class="card-body">
-                <h2 class="fw-bold">Ava Elizabeth</h2>
-                <p class="card-text fs-5 fw-semibold">Store Manager </p>
+                <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">SOCCERS SOCKES</a></h5>
+                <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames
+                  ...
+                </p>
+                <h3 class="fw-bold text-center section4-h3 ">$35 <span>$50.00</span></h3>
+                <a href="#" class="btn btn-primary section4-btn fs-5 fw-semibold text-center mt-4">ADD TO CART</a>
               </div>
             </div>
           </div>
-          <div class=" col-lg-3 col-md-6">
-            <div class="card p-2">
-              <img src="/assests/t-02.webp" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <!-- section6 -->
+
+      <div class="section6 mb-5 ">
+        <div class="container-fluid mt-5">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="card  mb-3">
+                <div class="card-body">
+                  <div class="section6-icon text-center"><i class="fa-solid fa-truck fs-2 text-light mt-4 "></i></div>
+                  <h3 class="card-title text-center mt-3 fw-bold">100% Secures Payments</h3>
+                  <p class="card-text text-center fs-5">Get free delivery on all orders, with sunglasses arriving at
+                    your
+                    doorstep at no extra cost!
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card  mb-3">
+                <div class="card-body">
+                  <div class="section6-icon text-center"><i class="fa-solid fa-headset fs-2 text-light mt-4 "></i></div>
+                  <h3 class="card-title text-center mt-3 fw-bold">Customer Support 24/7</h3>
+                  <p class="card-text text-center fs-5">Get free delivery on all orders, with sunglasses arriving at
+                    your
+                    doorstep at no extra cost!
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card  mb-3">
+                <div class="card-body">
+                  <div class="section6-icon text-center"><i class="fa-solid fa-sack-dollar fs-2 text-light mt-4"></i>
+                  </div>
+                  <h3 class="card-title text-center mt-3 fw-bold">100% Secures Payments</h3>
+                  <p class="card-text text-center fs-5">Get free delivery on all orders, with sunglasses arriving at
+                    your
+                    doorstep at no extra cost!
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card  mb-3">
+                <div class="card-body">
+                  <div class="section6-icon text-center"><i class="fa-solid fa-coins fs-2 text-light mt-4"></i></div>
+                  <h3 class="card-title text-center mt-3 fw-bold">Free Shipping</h3>
+                  <p class="card-text text-center fs-5">Get free delivery on all orders, with sunglasses arriving at
+                    your
+                    doorstep at no extra cost!
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end  section6-->
+      <!-- section7 -->
+      <div class="section4 container-fluid">
+        <p class="text-danger fs-5 fw-semibold">Products</p>
+        <div class="d-flex gap-5 sub-5 ">
+          <h2 class="fs-1 fw-bold">Latest Products</h2>
+          <a href="#" class="mt-3  fs-5 fw-semibold section4-a">SELL ALL PRODUCT</a>
+        </div>
+
+        <div class="container-fluid mt-5">
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="card  section4-cart  position-relative">
+                <div class="section4-img position-relative  "> <img src="/assests/images/category02.webp" alt=""> </div>
+                <div class="hiden-icons">
+                  <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
+                      class="fa-regular fa-heart fs-3"></i></div>
+                  <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view"><i
+                      class="fa-regular fa-eye fs-3 "></i></div>
+                  <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
+                      class="fa-solid fa-compass fs-3"></i></div>
+                </div>
+                <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-20%</div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">RED SHORTS</a></h5>
+                  <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames
+                    ...</p>
+                  <h3 class="fw-bold text-center section4-h3 ">$21 <span>$35.00</span></h3>
+                  <a href="#" class="btn  btn-primary section4-btn fs-5 fw-semibold text-center mt-4">ADD TO CART</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="card  section4-cart  position-relative">
+                <div class="section4-img position-relative  "> <img src="/assests/images/category01.webp" alt=""> </div>
+                <div class="hiden-icons">
+                  <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
+                      class="fa-regular fa-heart fs-3"></i></div>
+                  <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view"><i
+                      class="fa-regular fa-eye fs-3 "></i></div>
+                  <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
+                      class="fa-solid fa-compass fs-3"></i></div>
+                </div>
+                <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-20%</div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">RED SHOSE</a></h5>
+                  <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames
+                    ...</p>
+                  <h3 class="fw-bold text-center section4-h3 ">$21 <span>$35.00</span></h3>
+                  <a href="#" class="btn btn-primary section4-btn fs-5 fw-semibold text-center mt-4 ">ADD TO CART</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card  section4-cart  position-relative">
+                <div class="section4-img position-relative  "> <img src="/assests/images/gloves.webp" alt=""> </div>
+                <div class="hiden-icons">
+                  <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
+                      class="fa-regular fa-heart fs-3"></i></div>
+                  <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view"><i
+                      class="fa-regular fa-eye fs-3 "></i></div>
+                  <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
+                      class="fa-solid fa-compass fs-3"></i></div>
+                </div>
+                <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-20%</div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">Gloves</a></h5>
+                  <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames
+                    ...</p>
+                  <h3 class="fw-bold text-center section4-h3 ">$21 <span>$35.00</span></h3>
+                  <a href="#" class="btn btn-primary section4-btn fs-5 fw-semibold text-center mt-4 ">ADD TO CART</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card  section4-cart  position-relative">
+                <div class="section4-img position-relative  "> <img src="/assests/images/category04.webp" alt=""> </div>
+                <div class="hiden-icons">
+                  <div class="hiden" data-bs-toggle="tooltip" title="Add Wishlist" data-bs-placement="left"><i
+                      class="fa-regular fa-heart fs-3"></i></div>
+                  <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Quick view"><i
+                      class="fa-regular fa-eye fs-3 "></i></div>
+                  <div class="hiden" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Compare"><i
+                      class="fa-solid fa-compass fs-3"></i></div>
+                </div>
+                <div class="off text-center mt-3 position-absolute offset-1 text-bg-dark">-20%</div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center mt-3 fs-2 fw-bold"><a href="#">RED T-SHORTS</a></h5>
+                  <p class="card-text text-center fs-5 fw-semibold">Lorem ipsum dolor sit amet Scelerisque aliquet fames
+                    ...</p>
+                  <h3 class="fw-bold text-center section4-h3 ">$21 <span>$35.00</span></h3>
+                  <a href="#" class="btn btn-primary section4-btn fs-5 fw-semibold text-center mt-4 ">ADD TO CART</a>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+      <!-- end s7 -->
+
+      <!-- section8 -->
+      <div class="section8 container-fluid mt-5">
+        <p class="text-danger fs-5 fw-semibold">OUR TEAM</p>
+        <h2 class="fs-1 fw-bolder">Meet Our Soccer Store Team</h2>
+        <div class="container-fluid mt-5">
+          <div class="row g-4">
+            <div class=" col-lg-3 col-md-6">
+              <div class="card p-2">
+                <img src="/assests/images/t-01.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="fw-bold">Ava Elizabeth</h2>
+                  <p class="card-text fs-5 fw-semibold">Store Manager </p>
+                </div>
+              </div>
+            </div>
+            <div class=" col-lg-3 col-md-6">
+              <div class="card p-2">
+                <img src="/assests/images/t-02.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="fw-bold">John Michael</h2>
+                  <p class="card-text fs-5 fw-semibold">Online Sales Coordinator </p>
+                </div>
+              </div>
+            </div>
+            <div class=" col-lg-3 col-md-6">
+              <div class="card p-2">
+                <img src="/assests/images/t-03.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="fw-bold">Olivia Rose</h2>
+                  <p class="card-text fs-5 fw-semibold">Customer Service Lead</p>
+                </div>
+              </div>
+            </div>
+            <div class=" col-lg-3 col-md-6">
+              <div class="card p-2">
+                <img src="/assests/images/t-04.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="fw-bold">James Alexander</h2>
+                  <p class="card-text fs-5 fw-semibold">Customer Service Lead </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end-section8 -->
+
+      <div class="section8 container-fluid mt-5 mb-5">
+        <p class="text-danger fs-5 fw-semibold">OUR TESTIMONIALS</p>
+        <h1 class="fs-1 fw-bolder">What People Are Saying</h1>
+        <div class="row g-3 mt-4">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img src="/assests/images/testimonial-4.webp" class="offset-1 mt-4" alt="..." width="90px">
               <div class="card-body">
-                <h2 class="fw-bold">John Michael</h2>
-                <p class="card-text fs-5 fw-semibold">Online Sales Coordinator </p>
+                <h3 class="fw-bold mt-3 ">Henry Davies</h3>
+                <i class="fa-solid fa-star section8-icon"></i><i class="fa-solid fa-star section8-icon"></i>
+                <i class="fa-solid fa-star section8-icon"></i><i class="fa-solid fa-star section8-icon"></i>
+                <i class="fa-solid fa-star section8-icon"></i>
+                <p class="fs-5 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ab laborum odit
+                  magni ipsam quis amet Lorem ipsum dolor, .</p>
+
               </div>
             </div>
           </div>
-          <div class=" col-lg-3 col-md-6">
-            <div class="card p-2">
-              <img src="/assests/t-03.webp" class="card-img-top" alt="...">
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img src="/assests/images/testimonial-1.webp" class="offset-1 mt-4" alt="..." width="90px">
               <div class="card-body">
-                <h2 class="fw-bold">Olivia Rose</h2>
-                <p class="card-text fs-5 fw-semibold">Customer Service Lead</p>
+                <h3 class="fw-bold mt-3 ">Henry Davies</h3>
+                <i class="fa-solid fa-star section8-icon"></i><i class="fa-solid fa-star section8-icon"></i>
+                <i class="fa-solid fa-star section8-icon"></i><i class="fa-solid fa-star section8-icon"></i>
+                <i class="fa-solid fa-star section8-icon"></i>
+                <p class="fs-5 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ab laborum odit
+                  magni ipsam quis amet Lorem ipsum dolor, .</p>
+
               </div>
             </div>
           </div>
-          <div class=" col-lg-3 col-md-6">
-            <div class="card p-2">
-              <img src="/assests/t-04.webp" class="card-img-top" alt="...">
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img src="/assests/images/testimonial-2.webp" class="offset-1 mt-4" alt="..." width="90px">
               <div class="card-body">
-                <h2 class="fw-bold">James Alexander</h2>
-                <p class="card-text fs-5 fw-semibold">Customer Service Lead </p>
+                <h3 class="fw-bold mt-3 ">Henry Davies</h3>
+                <i class="fa-solid fa-star section8-icon"></i><i class="fa-solid fa-star section8-icon"></i>
+                <i class="fa-solid fa-star section8-icon"></i><i class="fa-solid fa-star section8-icon"></i>
+                <i class="fa-solid fa-star section8-icon"></i>
+                <p class="fs-5 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ab laborum odit
+                  magni ipsam quis amet Lorem ipsum dolor, .</p>
+
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- end-section8 -->
-
-    <div class="section8 container-fluid mt-5 mb-5">
-      <p class="text-danger fs-5 fw-semibold">OUR TESTIMONIALS</p>
-      <h1 class="fs-1 fw-bolder">What People Are Saying</h1>
-      <div class="row g-3 mt-4">
-
-        <div class="col-lg-4 col-md-6">
-          <div class="card">
-            <img src="/assests/testimonial-4.webp" class="offset-1 mt-4" alt="..." width="90px">
-            <div class="card-body">
-              <h3 class="fw-bold mt-3 ">Henry Davies</h3>
-              <i class="fa-solid fa-star section8-icon"></i><i class="fa-solid fa-star section8-icon"></i>
-              <i class="fa-solid fa-star section8-icon"></i><i class="fa-solid fa-star section8-icon"></i>
-              <i class="fa-solid fa-star section8-icon"></i>
-              <p class="fs-5 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ab laborum odit
-                magni ipsam quis amet Lorem ipsum dolor, .</p>
-
+      <!-- end-section8 -->
+      <!-- section9 -->
+      <div class="section9 container-fluid mb-5">
+        <p class="text-danger fs-5 fw-semibold">OUR BOGS</p>
+        <div class="d-flex gap-5 sub-5 ">
+          <h2 class="fs-1 fw-bold">OUR Resent News</h2>
+          <a href="#" class="mt-3  fs-5 fw-semibold section4-a">SELL ALL BLOGES</a>
+        </div>
+        <div class="row mt-5 g-4 mb-5">
+          <div class="col-lg-3 col-md-6">
+            <div class="card p-3">
+              <div class="position-relative  section9-image"> <img src="/assests/images/news-1.webp"
+                  class="card-img-top  section9-img" alt="..."></div>
+              <div class="date position-absolute mt-2 bg-danger  text-light fw-bold">OCT, 29 2024</div>
+              <div class="card-body">
+                <h4 class="card-title fw-bold"><a href="#">Lorem ipsum dolor: sit amet elit.</a></h4>
+                <p class="card-text fs-6">Some quick example text to build on the card title and make up the bulk of the
+                  card’s content.</p>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link fs-4 fw-semibold">Read More <i class="fa-solid fa-right-long"></i></a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card">
-            <img src="/assests/testimonial-1.webp" class="offset-1 mt-4" alt="..." width="90px">
-            <div class="card-body">
-              <h3 class="fw-bold mt-3 ">Henry Davies</h3>
-              <i class="fa-solid fa-star section8-icon"></i><i class="fa-solid fa-star section8-icon"></i>
-              <i class="fa-solid fa-star section8-icon"></i><i class="fa-solid fa-star section8-icon"></i>
-              <i class="fa-solid fa-star section8-icon"></i>
-              <p class="fs-5 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ab laborum odit
-                magni ipsam quis amet Lorem ipsum dolor, .</p>
-
+          <div class="col-lg-3 col-md-6">
+            <div class="card p-3">
+              <div class="position-relative  section9-image"> <img src="/assests/images/news-2.webp"
+                  class="card-img-top  section9-img" alt="..."></div>
+              <div class="date position-absolute mt-2 bg-danger  text-light fw-bold">OCT, 29 2024</div>
+              <div class="card-body">
+                <h4 class="card-title fw-bold"><a href="#">Lorem ipsum dolor: sit amet elit.</a></h4>
+                <p class="card-text fs-6">Some quick example text to build on the card title and make up the bulk of the
+                  card’s content.</p>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link fs-4 fw-semibold">Read More <i class="fa-solid fa-right-long"></i></a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card">
-            <img src="/assests/testimonial-2.webp" class="offset-1 mt-4" alt="..." width="90px">
-            <div class="card-body">
-              <h3 class="fw-bold mt-3 ">Henry Davies</h3>
-              <i class="fa-solid fa-star section8-icon"></i><i class="fa-solid fa-star section8-icon"></i>
-              <i class="fa-solid fa-star section8-icon"></i><i class="fa-solid fa-star section8-icon"></i>
-              <i class="fa-solid fa-star section8-icon"></i>
-              <p class="fs-5 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ab laborum odit
-                magni ipsam quis amet Lorem ipsum dolor, .</p>
-
+          <div class="col-lg-3 col-md-6">
+            <div class="card p-3">
+              <div class="position-relative section9-image"> <img src="/assests/images/news-3.webp"
+                  class="card-img-top section9-img" alt="..."></div>
+              <div class="date position-absolute mt-2 bg-danger  text-light fw-bold">OCT, 29 2024</div>
+              <div class="card-body">
+                <h4 class="card-title fw-bold"><a href="#"> Ducimus laudantium: eveniet minus vero.</a></h4>
+                <p class="card-text fs-6">Some quick example text to build on the card title and make up the bulk of the
+                  card’s content.</p>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link fs-4 fw-semibold">Read More <i class="fa-solid fa-right-long"></i></a>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- end-section8 -->
-    <!-- section9 -->
-    <div class="section9 container-fluid mb-5">
-      <p class="text-danger fs-5 fw-semibold">OUR BOGS</p>
-      <div class="d-flex gap-5 sub-5 ">
-        <h2 class="fs-1 fw-bold">OUR Resent News</h2>
-        <a href="#" class="mt-3  fs-5 fw-semibold section4-a">SELL ALL BLOGES</a>
-      </div>
-      <div class="row mt-5 g-4 mb-5">
-        <div class="col-lg-3 col-md-6">
-          <div class="card p-3">
-            <div class="position-relative  section9-image"> <img src="/assests/news-1.webp"
-                class="card-img-top  section9-img" alt="..."></div>
-            <div class="date position-absolute mt-2 bg-danger  text-light fw-bold">OCT, 29 2024</div>
-            <div class="card-body">
-              <h2 class="card-title fw-bold"><a href="#">Lorem ipsum dolor: sit amet elit.</a></h2>
-              <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the
-                card’s content.</p>
+          <div class="col-lg-3 col-md-6">
+            <div class="card p-3">
+              <div class="position-relative  section9-image"> <img src="/assests/images/news-4.webp"
+                  class="card-img-top  section9-img" alt="..."></div>
+              <div class="date position-absolute mt-2 bg-danger  text-light fw-bold">OCT, 29 2024</div>
+              <div class="card-body">
+                <h4 class="card-title fw-bold"><a href="#"> Amet consectetur elit: Dolor saepe vero. </a></h4>
+                <p class="card-text fs-6">Some quick example text to build on the card title and make up the bulk of the
+                  card’s content.</p>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link fs-4 fw-semibold">Read More <i class="fa-solid fa-right-long"></i></a>
+              </div>
             </div>
-            <div class="card-body">
-              <a href="#" class="card-link fs-4 fw-semibold">Read More <i class="fa-solid fa-right-long"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="card p-3">
-            <div class="position-relative  section9-image"> <img src="/assests/news-2.webp"
-                class="card-img-top  section9-img" alt="..."></div>
-            <div class="date position-absolute mt-2 bg-danger  text-light fw-bold">OCT, 29 2024</div>
-            <div class="card-body">
-              <h2 class="card-title fw-bold"><a href="#">Lorem ipsum dolor: sit amet elit.</a></h2>
-              <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the
-                card’s content.</p>
-            </div>
-            <div class="card-body">
-              <a href="#" class="card-link fs-4 fw-semibold">Read More <i class="fa-solid fa-right-long"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="card p-3">
-            <div class="position-relative section9-image"> <img src="/assests/news-3.webp"
-                class="card-img-top section9-img" alt="..."></div>
-            <div class="date position-absolute mt-2 bg-danger  text-light fw-bold">OCT, 29 2024</div>
-            <div class="card-body">
-              <h2 class="card-title fw-bold"><a href="#"> Ducimus laudantium: eveniet minus vero.</a></h2>
-              <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the
-                card’s content.</p>
-            </div>
-            <div class="card-body">
-              <a href="#" class="card-link fs-4 fw-semibold">Read More <i class="fa-solid fa-right-long"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="card p-3">
-            <div class="position-relative  section9-image"> <img src="/assests/news-4.webp"
-                class="card-img-top  section9-img" alt="..."></div>
-            <div class="date position-absolute mt-2 bg-danger  text-light fw-bold">OCT, 29 2024</div>
-            <div class="card-body">
-              <h2 class="card-title fw-bold"><a href="#"> Amet consectetur elit: Dolor saepe vero. </a></h2>
-              <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the
-                card’s content.</p>
-            </div>
-            <div class="card-body">
-              <a href="#" class="card-link fs-4 fw-semibold">Read More <i class="fa-solid fa-right-long"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!-- end-section9 -->
-    <div class="container-fluid mb-5">
-      <div class="row w-100 mx-auto gy-5">
-        <div class="col"> <img src="/assests/logo-01.webp" alt="" class="img-fluid">
-        </div>
-        <div class="col"><img src="/assests/logo-01.webp" alt="">
-        </div>
-        <div class="col d "><img src="/assests/logo-01.webp" alt=""></div>
-        <div class="col d "><img src="/assests/logo-01.webp" alt=""></div>
-        <div class="col f d"><img src="/assests/logo-01.webp" alt="">
-        </div>
-        <div class="col f d"><img src="/assests/logo-01.webp" alt=""></div>
-
-
-
-      </div>
-
-    </div>
-    <!-- section10 -->
-    <div class="container-fluid news mt-5 mb-5">
-
-      <div class="row mb-5">
-        <div class="col-lg-6 col-md-12">
-          <h1 class=" text-light   NEWSLETTER ">SUBSCRIBE TO OUR NEWSLETTER</h1>
-        </div>
-        <div class="col-lg-6 col-md-12">
-          <div class="input-group  input-group-newsletter">
-            <input type="text" class="form-control bg-dark  text-light fw-semibold" placeholder="YOUR EMAIL ADDRESS..."
-              aria-label="Recipient’s username" aria-describedby="button-addon2">
-            <button class="btn bg-danger  text-light " type="button" id="button-addon2">Button</button>
           </div>
         </div>
 
       </div>
-    </div>
+      <!-- end-section9 -->
+      <div class="container-fluid mb-5">
+        <div class="row w-100 mx-auto gy-5">
+          <div class="col"> <img src="/assests/images/logo-01.webp" alt="" class="img-fluid">
+          </div>
+          <div class="col"><img src="/assests/images/logo-01.webp" alt="">
+          </div>
+          <div class="col d "><img src="/assests/images/logo-01.webp" alt=""></div>
+          <div class="col d "><img src="/assests/images/logo-01.webp" alt=""></div>
+          <div class="col f d"><img src="/assests/images/logo-01.webp" alt="">
+          </div>
+          <div class="col f d"><img src="/assests/images/logo-01.webp" alt=""></div>
+
+
+
+        </div>
+
+      </div>
+      <!-- section10 -->
+      <div class="container-fluid news mt-5 mb-5">
+
+        <div class="row mb-5">
+          <div class="col-lg-6 col-md-12">
+            <h1 class=" text-light   NEWSLETTER ">SUBSCRIBE TO OUR NEWSLETTER</h1>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="input-group mb-3 " style="width: 350px; margin-top: 160px;">
+  <input type="text" class="form-control fw-bold" placeholder="Your Email Addree..." aria-label="Recipient’s username" aria-describedby="button-addon2">
+  <button class="btn btn-outline-secondary bg-danger text-light" type="button" id="button-addon2">Button</button>
+</div>
+          </div>
+
+        </div>
+      </div>
   </section>
 
   <!-- section10 -->
@@ -872,7 +947,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-3 col-md-6">
-          <a class="navbar-brand" href="#"><img src="/assests/footer img.webp" alt=""></a>
+          <a class="navbar-brand" href="#"><img src="/assests/images/footer img.webp" alt=""></a>
           <p class="mt-3 fs-5">Lorem ipsum dolor sit amet consectetur. Ornare amet enim vel varius purus consequat
             ultrices.
             Id mi viverra euismod risus viverra tortor cursus.
@@ -881,7 +956,7 @@
           <div class="d-flex gap-3">
             <div class="footre-icon"><i class="fa-brands fa-linkedin-in  fs-2 p-2"></i></div>
             <div class="footre-icon"><i class="fa-solid fa-camera fs-2 p-2"></i></div>
-            <div class="footre-icon"><i class="fa-brands fa-facebook-f fs-2 p-2"></i></div>
+            <div class="footre-icon"><i class="fa-brands fa-facebook-f fs-2 p-2" style="margin-left: 7px;"></i></div>
             <div class="footre-icon"><i class="fa-brands fa-x-twitter fs-2 p-2"></i></div>
           </div>
         </div>
@@ -891,7 +966,7 @@
             aria-controls="collapseWidthExample">Quick Link</h3>
           </p>
           <div>
-            <div class="collapse " id="collapseWidthExample">
+            <div class="collapse show " id="collapseWidthExample">
               <div class="card bg-transparent footer-colaps">
 
                 <ul>
@@ -910,15 +985,15 @@
             aria-controls="collapseWidthExample">Infomation</h3>
           </p>
           <div>
-            <div class="collapse" id="collapseWidthExample-2">
+            <div class="collapse show" id="collapseWidthExample-2">
               <div class="card bg-transparent footer-colaps">
 
                 <ul>
-                  <li class="mt-2 fs-5 fw-semibold"> <a href="#">Home Page</a></li>
-                  <li class="mt-2 fs-5 fw-semibold"> <a href="#">About Us</a></li>
-                  <li class="mt-2 fs-5 fw-semibold"> <a href="#">Shop</a></li>
-                  <li class="mt-2 fs-5 fw-semibold"> <a href="#">Blog</a></li>
-                  <li class="mt-2 fs-5 fw-semibold"> <a href="#">Our Team</a></li>
+                  <li class="mt-2 fs-6 fw-semibold"> <a href="#">Home Page</a></li>
+                  <li class="mt-2 fs-6 fw-semibold"> <a href="#">About Us</a></li>
+                  <li class="mt-2 fs-6 fw-semibold"> <a href="#">Shop</a></li>
+                  <li class="mt-2 fs-6 fw-semibold"> <a href="#">Blog</a></li>
+                  <li class="mt-2 fs-6 fw-semibold"> <a href="#">Our Team</a></li>
 
                 </ul>
               </div>
@@ -928,16 +1003,16 @@
 
         <div class="col-lg-3 col-md-6">
           <p>
-          <h3 class="fw-bold" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample-3" aria-expanded="false"
+          <h3 class="fw-bold " data-bs-toggle="collapse" data-bs-target="#collapseWidthExample-3" aria-expanded="false"
             aria-controls="collapseWidthExample">Contact Us</h3>
           </p>
           <div>
-            <div class="collapse" id="collapseWidthExample-3">
+            <div class="collapse show" id="collapseWidthExample-3">
               <div class="card bg-transparent text-start footer-colaps">
 
-                <p class="fs-3 fw-bold "><a href="#"><i class="fa-solid fa-phone fs-3"></i> +92 342-6681077</a></p>
-                <p class="fs-4"><a href="#"> <i class="fa-solid fa-envelope fs-4"></i> exampleinfo@gmail.com</a></p>
-                <p class="fs-3"><a href="#"> <i class="fa-solid fa-clock fs-5"></i> Store open : 9am-7pm</a></p>
+                <p class="fs-5 fw-bold "><a href="#"><i class="fa-solid fa-phone fs-5"></i> +92 342-6681077</a></p>
+                <p class="fs-5"><a href="#"> <i class="fa-solid fa-envelope fs-5"></i> exampleinfo@gmail.com</a></p>
+                <p class="fs-5"><a href="#"> <i class="fa-solid fa-clock fs-5"></i> Store open : 9am-7pm</a></p>
               </div>
             </div>
           </div>
